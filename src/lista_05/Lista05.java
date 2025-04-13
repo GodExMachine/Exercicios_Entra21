@@ -1,6 +1,6 @@
 /*	
 	(01) Escreva uma função para receber as dimensões de um retângulo (base e altura) e retornar a sua área.
-//teste
+//testemudei aqui ó
 	(02) Escreva uma função para receber 3 notas de um aluno e retornar a sua média final (média ponderada; o peso das notas é: 2, 3 e 5, respectivamente).
 
 	(03) Escreva uma função para receber a idade de uma pessoa expressa em dias e retorne ela expressa em anos, meses e dias (considerar o ano com 365 dias e o mês com 30 dias).
