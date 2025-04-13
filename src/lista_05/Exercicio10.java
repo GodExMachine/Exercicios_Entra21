@@ -3,19 +3,45 @@ package lista_05;
 public class Exercicio10 {
 
 	public static void main(String args[]) {
-		
-		//teste 2
-		//sss
+
+		int vetorA[] = { 1, 2, 3, 4, 5, 6, 7, 10 };
+
+		for (int i = 0; i < vetorA.length; i++) {
+
+			System.out.println(listaFatorial(vetorA)[i]);
+
+		}
+
 	}
 	
+	public static int[] listaFatorial(int[] valor) {
+
+		int[] vetorSaida = new int [valor.length];
+		
+		for(int i = 0; i < valor.length;i ++) {
+			
+			vetorSaida[i] = verificaFatorial(valor[i]);
+			
+		}
+		
+		return vetorSaida;
+		
+
+	}
 	
-//	public static int verificaFatorial(int valor){
-		
-		
-	
-		
-		
-//	}
+	public static int verificaFatorial(int valor) {
+
+		int fatorial = 1;
+
+		for (int i = 0; i < valor; i++) {
+
+			fatorial += fatorial * i;
+
+		}
+
+		return fatorial;
+
+	}
 	
 	
 	
