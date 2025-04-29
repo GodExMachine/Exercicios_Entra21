@@ -21,18 +21,27 @@ public class Exercicio06 {
 	}
 	
 	
+	public static long fatorial(int valor) {
+
+		long fatorial = 1;
+
+		for (int i = 0; i < valor; i++) {
+
+			fatorial += fatorial * i;
+		}
+		
+		return fatorial;
+
+	}
+	
+	
 	
 	public static boolean testeFatorial(int valor, int teste ) {
 		
-		int fatorial = 1;
 		
-		for(int i = 0; i < valor; i++) {
-			
-			 fatorial += fatorial * i;
-		}
-		
-		if(fatorial == teste){
+		if(fatorial(valor) == teste){
 			return true;	
+			
 		}else {
 		
 		return false;

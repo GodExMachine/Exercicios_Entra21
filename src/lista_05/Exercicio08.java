@@ -17,24 +17,20 @@ public class Exercicio08 {
 
 	public static int proximoPerfeito(int valor) {
 
-		
-		
-		do{
-		
+		do {
+
 			valor++;
-		
-		
-		}while(!verificaPerfeito(valor));
-		
+
+		} while (!verificaPerfeito(valor));
+
 		return valor;
 	}
 
-	
 	public static boolean verificaPerfeito(int valor) {
 
 		int soma = 0;
 
-		for (int i = 1; i < valor; i++) {
+		for (int i = 1; i <= valor; i++) {
 
 			if (valor % i == 0) {
 
@@ -44,15 +40,13 @@ public class Exercicio08 {
 
 		}
 
-		if (soma == valor) {
+		if (soma == valor * 2) {
 			return true;
 
 		}
 
 		return false;
 	}
-	
-	
 
 }
 
